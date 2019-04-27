@@ -5,7 +5,7 @@ LDADD = $(top_srcdir)/lib/libicp/libicp.la
 
 AUTOMAKE_OPTIONS = subdir-objects
 
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/checksum
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/checksum
 
 dist_pkgdata_SCRIPTS = \
 	setup.ksh \
@@ -18,7 +18,7 @@ dist_pkgdata_SCRIPTS = \
 dist_pkgdata_DATA = \
 	default.cfg
 
-pkgexecdir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/checksum
+pkgexecdir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/checksum
 
 pkgexec_PROGRAMS = \
 	edonr_test \

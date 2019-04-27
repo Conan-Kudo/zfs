@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/inheritance
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/inheritance
 dist_pkgdata_SCRIPTS = \
 	cleanup.ksh \
 	inherit_001_pos.ksh

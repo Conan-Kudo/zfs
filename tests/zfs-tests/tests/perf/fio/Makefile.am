@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/perf/fio
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/perf/fio
 dist_pkgdata_DATA = \
 	mkfiles.fio \
 	random_reads.fio \

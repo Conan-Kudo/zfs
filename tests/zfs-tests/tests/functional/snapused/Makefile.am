@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/snapused
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/snapused
 dist_pkgdata_SCRIPTS = \
 	setup.ksh \
 	cleanup.ksh \

@@ -1,12 +1,12 @@
 include $(top_srcdir)/config/Rules.am
 
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/tmpfile
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/tmpfile
 
 dist_pkgdata_SCRIPTS = \
 	cleanup.ksh \
 	setup.ksh
 
-pkgexecdir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/tmpfile
+pkgexecdir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/tmpfile
 
 pkgexec_PROGRAMS = tmpfile_test tmpfile_001_pos tmpfile_002_pos tmpfile_003_pos
 tmpfile_test_SOURCES= tmpfile_test.c

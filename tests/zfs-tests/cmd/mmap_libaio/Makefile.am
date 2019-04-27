@@ -1,6 +1,6 @@
 include $(top_srcdir)/config/Rules.am
 
-pkgexecdir = $(datadir)/@PACKAGE@/zfs-tests/bin
+pkgexecdir = $(libexecdir)/@PACKAGE@/zfs-tests/bin
 
 if WANT_MMAP_LIBAIO
 pkgexec_PROGRAMS = mmap_libaio

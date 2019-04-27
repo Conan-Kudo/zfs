@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/zvol
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/zvol
 dist_pkgdata_DATA = \
 	zvol.cfg \
 	zvol_common.shlib

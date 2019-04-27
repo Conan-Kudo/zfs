@@ -29,7 +29,7 @@ The pre-requisites for running the ZFS Test Suite are:
   * Three scratch disks
     * Specify the disks you wish to use in the $DISKS variable, as a
       space delimited list like this: DISKS='vdb vdc vdd'.  By default
-      the zfs-tests.sh sciprt will construct three loopback devices to
+      the zfs-tests.sh script will construct three loopback devices to
       be used for testing: DISKS='loop0 loop1 loop2'.
   * A non-root user with a full set of basic privileges and the ability
     to sudo(8) to root without a password to run the test.
@@ -42,7 +42,7 @@ The pre-requisites for running the ZFS Test Suite are:
 
 Once the pre-requisites are satisfied simply run the zfs-tests.sh script:
 
-    $ /usr/share/zfs/zfs-tests.sh
+    $ /usr/libexec/zfs/zfs-tests.sh
 
 Alternately, the zfs-tests.sh script can be run from the source tree to allow
 developers to rapidly validate their work.  In this mode the ZFS utilities and
@@ -105,9 +105,9 @@ runfile or list of tags.
 
 The format of the runfile is explained in test-runner(1), and
 the files that zfs-tests.sh uses are available for reference under
-/usr/share/zfs/runfiles. To specify a custom runfile, use the -r option:
+/usr/libexec/zfs/runfiles. To specify a custom runfile, use the -r option:
 
-    $ /usr/share/zfs/zfs-tests.sh -r my_tests.run
+    $ /usr/libexec/zfs/zfs-tests.sh -r my_tests.run
 
 Otherwise user can set needed tags to run only specific tests.
 
@@ -119,12 +119,12 @@ results summary includes the location of the complete logs, which is logged in
 the form `/var/tmp/test_results/[ISO 8601 date]`.  A normal test run launched
 with the `zfs-tests.sh` wrapper script will look something like this:
 
-    $ /usr/share/zfs/zfs-tests.sh -v -d /tmp/test
+    $ /usr/libexec/zfs/zfs-tests.sh -v -d /tmp/test
 
     --- Configuration ---
-    Runfile:         /usr/share/zfs/runfiles/linux.run
-    STF_TOOLS:       /usr/share/zfs/test-runner
-    STF_SUITE:       /usr/share/zfs/zfs-tests
+    Runfile:         /usr/libexec/zfs/runfiles/linux.run
+    STF_TOOLS:       /usr/libexec/zfs/test-runner
+    STF_SUITE:       /usr/libexec/zfs/zfs-tests
     STF_PATH:        /var/tmp/constrained_path.G0Sf
     FILEDIR:         /tmp/test
     FILES:           /tmp/test/file-vdev0 /tmp/test/file-vdev1 /tmp/test/file-vdev2
@@ -137,11 +137,11 @@ with the `zfs-tests.sh` wrapper script will look something like this:
     Keep pool(s):    rpool
 
 
-    /usr/share/zfs/test-runner/bin/test-runner.py  -c /usr/share/zfs/runfiles/linux.run \
-        -T functional -i /usr/share/zfs/zfs-tests -I 1
-    Test: /usr/share/zfs/zfs-tests/tests/functional/arc/setup (run as root) [00:00] [PASS]
+    /usr/libexec/zfs/test-runner/bin/test-runner.py  -c /usr/libexec/zfs/runfiles/linux.run \
+        -T functional -i /usr/libexec/zfs/zfs-tests -I 1
+    Test: /usr/libexec/zfs/zfs-tests/tests/functional/arc/setup (run as root) [00:00] [PASS]
     ...more than 1100 additional tests...
-    Test: /usr/share/zfs/zfs-tests/tests/functional/zvol/zvol_swap/cleanup (run as root) [00:00] [PASS]
+    Test: /usr/libexec/zfs/zfs-tests/tests/functional/zvol/zvol_swap/cleanup (run as root) [00:00] [PASS]
 
     Results Summary
     SKIP	  52

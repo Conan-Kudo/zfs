@@ -13,7 +13,7 @@
 # Copyright (c) 2014, 2015 by Delphix. All rights reserved.
 #
 
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/removal
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/removal
 
 dist_pkgdata_SCRIPTS = \
 	cleanup.ksh removal_all_vdev.ksh removal_check_space.ksh \
@@ -30,4 +30,4 @@ dist_pkgdata_SCRIPTS = \
 	removal_with_zdb.ksh remove_mirror.ksh remove_mirror_sanity.ksh \
 	remove_raidz.ksh remove_expanded.ksh removal.kshlib
 
-pkgexecdir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/removal
+pkgexecdir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/removal

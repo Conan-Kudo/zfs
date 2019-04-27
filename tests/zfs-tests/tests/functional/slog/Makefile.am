@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/slog
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/slog
 dist_pkgdata_SCRIPTS = \
 	setup.ksh \
 	cleanup.ksh \

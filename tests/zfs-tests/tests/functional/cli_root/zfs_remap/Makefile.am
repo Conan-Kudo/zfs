@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/cli_root/zfs_remap
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/cli_root/zfs_remap
 
 dist_pkgdata_SCRIPTS = \
 	setup.ksh \

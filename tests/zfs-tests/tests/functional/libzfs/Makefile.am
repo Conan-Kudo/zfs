@@ -1,8 +1,8 @@
 include $(top_srcdir)/config/Rules.am
 
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/libzfs
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/libzfs
 
-pkgexecdir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/libzfs
+pkgexecdir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/libzfs
 
 dist_pkgdata_SCRIPTS = \
 	cleanup.ksh \

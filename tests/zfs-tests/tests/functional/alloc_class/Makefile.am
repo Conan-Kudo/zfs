@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/alloc_class
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/alloc_class
 dist_pkgdata_SCRIPTS = \
 	alloc_class.cfg \
 	alloc_class.kshlib \

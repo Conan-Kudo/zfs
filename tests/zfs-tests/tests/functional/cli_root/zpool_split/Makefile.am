@@ -1,6 +1,6 @@
 include $(top_srcdir)/config/Rules.am
 
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/cli_root/zpool_split
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/cli_root/zpool_split
 
 dist_pkgdata_SCRIPTS = \
 	cleanup.ksh \

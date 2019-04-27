@@ -1,4 +1,4 @@
-pkgpyzfsdir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/pyzfs
+pkgpyzfsdir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/pyzfs
 pkgpyzfs_SCRIPTS = \
 	pyzfs_unittest.ksh
 

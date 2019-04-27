@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/inuse
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/inuse
 dist_pkgdata_SCRIPTS = \
 	setup.ksh \
 	inuse_001_pos.ksh \

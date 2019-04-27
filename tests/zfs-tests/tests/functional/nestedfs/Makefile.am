@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/nestedfs
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/nestedfs
 dist_pkgdata_SCRIPTS = \
 	setup.ksh \
 	cleanup.ksh \

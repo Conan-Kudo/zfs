@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/features/async_destroy
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/features/async_destroy
 dist_pkgdata_SCRIPTS = \
 	cleanup.ksh \
 	setup.ksh \

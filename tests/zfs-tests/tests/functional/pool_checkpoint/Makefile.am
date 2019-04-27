@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/pool_checkpoint
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/pool_checkpoint
 dist_pkgdata_SCRIPTS = \
 	cleanup.ksh \
 	setup.ksh \

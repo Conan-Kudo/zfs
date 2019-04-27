@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/zvol/zvol_swap
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/zvol/zvol_swap
 dist_pkgdata_SCRIPTS = \
 	cleanup.ksh \
 	setup.ksh \

@@ -1,6 +1,6 @@
 include $(top_srcdir)/config/Rules.am
 
-pkgexecdir = $(datadir)/@PACKAGE@/zfs-tests/bin
+pkgexecdir = $(libexecdir)/@PACKAGE@/zfs-tests/bin
 
 DEFAULT_INCLUDES += \
 	-I$(top_srcdir)/include

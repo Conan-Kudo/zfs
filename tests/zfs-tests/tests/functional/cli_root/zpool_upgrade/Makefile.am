@@ -1,6 +1,6 @@
 SUBDIRS = blockfiles
 
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/cli_root/zpool_upgrade
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/cli_root/zpool_upgrade
 dist_pkgdata_SCRIPTS = \
 	setup.ksh \
 	cleanup.ksh \

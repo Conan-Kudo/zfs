@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/cli_root/zpool_upgrade/blockfiles
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/cli_root/zpool_upgrade/blockfiles
 dist_pkgdata_DATA = \
 	zfs-broken-mirror1.dat.bz2 \
 	zfs-broken-mirror2.dat.bz2 \

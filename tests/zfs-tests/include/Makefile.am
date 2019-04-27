@@ -1,4 +1,4 @@
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/include
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/include
 dist_pkgdata_DATA = \
 	blkdev.shlib \
 	commands.cfg \

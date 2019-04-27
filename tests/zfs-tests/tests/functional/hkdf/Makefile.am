@@ -7,14 +7,14 @@ LDADD += $(top_srcdir)/lib/libzpool/libzpool.la
 
 AUTOMAKE_OPTIONS = subdir-objects
 
-pkgdatadir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/hkdf
+pkgdatadir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/hkdf
 
 dist_pkgdata_SCRIPTS = \
 	setup.ksh \
 	cleanup.ksh \
 	run_hkdf_test.ksh
 
-pkgexecdir = $(datadir)/@PACKAGE@/zfs-tests/tests/functional/hkdf
+pkgexecdir = $(libexecdir)/@PACKAGE@/zfs-tests/tests/functional/hkdf
 
 pkgexec_PROGRAMS = \
 	hkdf_test
